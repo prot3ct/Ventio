@@ -5,6 +5,7 @@ class AccountViewController: UIViewController
 {    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     internal var userData: UserDataProtocol!
     
     private let disposeBag = DisposeBag()

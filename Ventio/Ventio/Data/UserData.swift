@@ -5,12 +5,10 @@ import RxSwift
 public class UserData: UserDataProtocol
 {
     private let requester: RequesterProcol
-    private let userDefaults: UserDefaults
     
     init(requester: RequesterProcol)
     {
         self.requester = requester
-        userDefaults = UserDefaults.standard
     }
     
     public func signIn(username: String, password: String) -> Observable<ResponseProtocol>
@@ -24,10 +22,9 @@ public class UserData: UserDataProtocol
             .post(API.signInUrl, parameters: userCredentials)
             .filter { $0.body != nil }
             .do(onNext: { res in
-                let result = JSON(res.body!)["result"]
-                let username = result["username"].stringValue
+                let username = res.body!["username"]!
 
-                self.userDefaults.set(username, forKey: "user_username")
+                UserDefaults.standard.set(username, forKey: "username")
             })
     }
     
@@ -43,12 +40,12 @@ public class UserData: UserDataProtocol
     
     public func signOut()
     {
-        self.userDefaults.removeObject(forKey: "user_username")
+        UserDefaults.standard.removeObject(forKey: "username")
     }
     
     public func isLoggedIn() -> Bool
     {
-        let doesUserUsernameExist = self.userDefaults.contains(key: "user_username")
+        let doesUserUsernameExist = UserDefaults.standard.contains(key: "username")
         
         return doesUserUsernameExist
     }

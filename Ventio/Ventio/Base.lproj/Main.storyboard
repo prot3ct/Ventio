@@ -157,18 +157,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="w0o-O0-LaY"/>
+                    <navigationItem key="navigationItem" id="w0o-O0-LaY">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="kBV-Eu-sLa">
+                            <connections>
+                                <segue destination="ylp-zT-qHb" kind="show" id="UYw-Ud-mQR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateTextField" destination="WOq-jd-YCR" id="3jw-hh-8y6"/>
                         <outlet property="descriptionTextField" destination="39R-25-Wbf" id="PAg-Qm-C7s"/>
-                        <outlet property="isPublic" destination="h9d-3d-3Bt" id="gNH-hH-6tQ"/>
                         <outlet property="timeTextField" destination="vkV-ry-O4K" id="kQV-bH-WZt"/>
                         <outlet property="titleTextField" destination="BRf-yC-w8d" id="xRC-ld-pMv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYe-tT-jqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1501.5999999999999" y="-798.35082458770626"/>
+            <point key="canvasLocation" x="1428" y="-819"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sbA-LX-ncw">
@@ -184,7 +189,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YpY-4p-o9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660" y="-798"/>
+            <point key="canvasLocation" x="705" y="-819"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eaB-DZ-cxH">
@@ -269,4 +274,7 @@
             <point key="canvasLocation" x="-1908" y="-1062"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UYw-Ud-mQR"/>
+    </inferredMetricsTieBreakers>
 </document>
