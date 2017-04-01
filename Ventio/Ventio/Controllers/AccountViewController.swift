@@ -35,9 +35,10 @@ class AccountViewController: UIViewController
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { res in
-                //self.changeInitialViewController(identifier: "homeAuthVC")
+                self.changeInitialViewController(identifier: "myEventsViewController")
                 self.showSuccess(withStatus: "You have signed in successfully")
             }, onError: { error in
+                print(error)
                 self.showError(withStatus: "Invalid username or password")
             })
             .disposed(by: disposeBag)
@@ -80,4 +81,10 @@ class AccountViewController: UIViewController
             .disposed(by: disposeBag)
     }
     
-}
+    private func changeInitialViewController(identifier: String)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard
+            .instantiateViewController(withIdentifier: identifier)
+        UIApplication.shared.keyWindow?.rootViewController = initialViewController
+    }}

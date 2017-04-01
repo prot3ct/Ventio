@@ -33,7 +33,11 @@ private func setupHelpers(_ defaultContainer: Container)
 
 private func setupData(_ defaultContainer: Container)
 {
-
+    defaultContainer.register(EventDataProtocol.self)
+    { r in
+        EventData(requester: r.resolve(RequesterProcol.self)!)
+    }
+    
     defaultContainer.register(UserDataProtocol.self)
     { r in
         UserData(requester: r.resolve(RequesterProcol.self)!)

@@ -13,6 +13,11 @@
 		8D13493A1E8EC7AE006DEC19 /* Ventio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349381E8EC7AE006DEC19 /* Ventio.xcdatamodeld */; };
 		8D13493C1E8EC7AE006DEC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */; };
 		8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493D1E8EC7AE006DEC19 /* LaunchScreen.storyboard */; };
+		8DD2D7A21E901534005867B2 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7A11E901534005867B2 /* EventsTableViewController.swift */; };
+		8DD2D7A61E901C6F005867B2 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7A51E901C6F005867B2 /* CreateEventViewController.swift */; };
+		8DD2D7AA1E901D84005867B2 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7A91E901D84005867B2 /* EventData.swift */; };
+		8DD2D7AC1E901D93005867B2 /* EventDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7AB1E901D93005867B2 /* EventDataProtocol.swift */; };
+		8DD2D7AE1E9023B6005867B2 /* UserDefaultsContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */; };
 		8DEFB43D1E8FE58100863CD7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */; };
 		8DEFB43F1E8FE60F00863CD7 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43E1E8FE60F00863CD7 /* Requester.swift */; };
 		8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */; };
@@ -38,6 +43,11 @@
 		8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D13493E1E8EC7AE006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1349401E8EC7AE006DEC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD2D7A11E901534005867B2 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		8DD2D7A51E901C6F005867B2 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		8DD2D7A91E901D84005867B2 /* EventData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		8DD2D7AB1E901D93005867B2 /* EventDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataProtocol.swift; sourceTree = "<group>"; };
+		8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsContains.swift; sourceTree = "<group>"; };
 		8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8DEFB43E1E8FE60F00863CD7 /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequesterProtocol.swift; sourceTree = "<group>"; };
@@ -115,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */,
+				8DD2D7A11E901534005867B2 /* EventsTableViewController.swift */,
+				8DD2D7A51E901C6F005867B2 /* CreateEventViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,8 +143,10 @@
 		8DEFB4371E8FE54100863CD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFB4441E8FE67300863CD7 /* UserDataProtocol.swift */,
 				8DEFB4421E8FE66500863CD7 /* UserData.swift */,
+				8DEFB4441E8FE67300863CD7 /* UserDataProtocol.swift */,
+				8DD2D7A91E901D84005867B2 /* EventData.swift */,
+				8DD2D7AB1E901D93005867B2 /* EventDataProtocol.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -151,6 +165,7 @@
 				8DEFB4481E8FE6DA00863CD7 /* SwinjectSetup.swift */,
 				8DEFB44A1E8FE6EE00863CD7 /* StringCount.swift */,
 				8DEFB44C1E8FE71000863CD7 /* UIViewControllerLoading.swift */,
+				8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,15 +323,20 @@
 			files = (
 				8DEFB4431E8FE66500863CD7 /* UserData.swift in Sources */,
 				8D13493A1E8EC7AE006DEC19 /* Ventio.xcdatamodeld in Sources */,
+				8DD2D7AA1E901D84005867B2 /* EventData.swift in Sources */,
+				8DD2D7AE1E9023B6005867B2 /* UserDefaultsContains.swift in Sources */,
 				8D1349321E8EC7AE006DEC19 /* AppDelegate.swift in Sources */,
 				8DEFB43F1E8FE60F00863CD7 /* Requester.swift in Sources */,
 				8DEFB44F1E8FE73200863CD7 /* Response.swift in Sources */,
 				8DEFB4551E8FE78300863CD7 /* ResponseFactoryProtocol.swift in Sources */,
+				8DD2D7A21E901534005867B2 /* EventsTableViewController.swift in Sources */,
 				8DEFB44B1E8FE6EE00863CD7 /* StringCount.swift in Sources */,
 				8DEFB4451E8FE67300863CD7 /* UserDataProtocol.swift in Sources */,
 				8DEFB4491E8FE6DA00863CD7 /* SwinjectSetup.swift in Sources */,
 				8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */,
 				8DEFB4471E8FE69C00863CD7 /* API.swift in Sources */,
+				8DD2D7A61E901C6F005867B2 /* CreateEventViewController.swift in Sources */,
+				8DD2D7AC1E901D93005867B2 /* EventDataProtocol.swift in Sources */,
 				8DEFB44D1E8FE71000863CD7 /* UIViewControllerLoading.swift in Sources */,
 				8DEFB4511E8FE73C00863CD7 /* ResponseProtocol.swift in Sources */,
 				8DEFB43D1E8FE58100863CD7 /* AccountViewController.swift in Sources */,
