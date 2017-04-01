@@ -47,9 +47,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Login"/>
+<<<<<<< HEAD
                                 <connections>
                                     <action selector="onLoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ma0-Wm-ii5"/>
                                 </connections>
+=======
+>>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc1-nY-ZWS">
                                 <rect key="frame" x="53" y="241" width="126" height="58"/>

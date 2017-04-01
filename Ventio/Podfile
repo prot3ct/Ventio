@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.2'
 use_frameworks!
@@ -5,11 +6,23 @@ use_frameworks!
 target 'Ventio' do
 	pod 'Swinject'
 	pod 'SwinjectStoryboard'
+=======
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+target 'Ventio' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+	pod 'Swinject'
+>>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
 	pod 'Alamofire'
 	pod 'SwiftyJSON'
 	pod 'SVProgressHUD'
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'Cosmos'
+<<<<<<< HEAD
 	pod 'Kingfisher'
+=======
+
+>>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
 end
