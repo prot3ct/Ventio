@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D1349091E8EBEDC006DEC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349081E8EBEDC006DEC19 /* AppDelegate.swift */; };
-		8D13490B1E8EBEDC006DEC19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D13490A1E8EBEDC006DEC19 /* ViewController.swift */; };
-		8D13490E1E8EBEDC006DEC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D13490C1E8EBEDC006DEC19 /* Main.storyboard */; };
-		8D1349111E8EBEDC006DEC19 /* Ventio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D13490F1E8EBEDC006DEC19 /* Ventio.xcdatamodeld */; };
-		8D1349131E8EBEDC006DEC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349121E8EBEDC006DEC19 /* Assets.xcassets */; };
-		8D1349161E8EBEDC006DEC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349141E8EBEDC006DEC19 /* LaunchScreen.storyboard */; };
+		8D1349321E8EC7AE006DEC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349311E8EC7AE006DEC19 /* AppDelegate.swift */; };
+		8D1349371E8EC7AE006DEC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349351E8EC7AE006DEC19 /* Main.storyboard */; };
+		8D13493A1E8EC7AE006DEC19 /* Ventio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349381E8EC7AE006DEC19 /* Ventio.xcdatamodeld */; };
+		8D13493C1E8EC7AE006DEC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */; };
+		8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493D1E8EC7AE006DEC19 /* LaunchScreen.storyboard */; };
+		8D1349471E8EC7FF006DEC19 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349461E8EC7FF006DEC19 /* Controllers */; };
+		8D1349491E8EC808006DEC19 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349481E8EC808006DEC19 /* Data */; };
+		8D13494B1E8EC80F006DEC19 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 8D13494A1E8EC80F006DEC19 /* Services */; };
+		8D6F66081E8EF65B00ABCE96 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F66071E8EF65B00ABCE96 /* Models */; };
+		8D6F66131E8EF85600ABCE96 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F66121E8EF85600ABCE96 /* Extensions */; };
+		8D6F66161E8EF96100ABCE96 /* Config in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F66151E8EF96100ABCE96 /* Config */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D1349051E8EBEDC006DEC19 /* Ventio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ventio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D1349081E8EBEDC006DEC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D13490A1E8EBEDC006DEC19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D13490D1E8EBEDC006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D1349101E8EBEDC006DEC19 /* Ventio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ventio.xcdatamodel; sourceTree = "<group>"; };
-		8D1349121E8EBEDC006DEC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8D1349151E8EBEDC006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8D1349171E8EBEDC006DEC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D13492E1E8EC7AE006DEC19 /* Ventio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ventio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1349311E8EC7AE006DEC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D1349361E8EC7AE006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D1349391E8EC7AE006DEC19 /* Ventio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ventio.xcdatamodel; sourceTree = "<group>"; };
+		8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D13493E1E8EC7AE006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D1349401E8EC7AE006DEC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1349461E8EC7FF006DEC19 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		8D1349481E8EC808006DEC19 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		8D13494A1E8EC80F006DEC19 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
+		8D6F66071E8EF65B00ABCE96 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		8D6F66121E8EF85600ABCE96 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		8D6F66151E8EF96100ABCE96 /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D1349021E8EBEDC006DEC19 /* Frameworks */ = {
+		8D13492B1E8EC7AE006DEC19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +47,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D1348FC1E8EBEDC006DEC19 = {
+		8D1349251E8EC7AE006DEC19 = {
 			isa = PBXGroup;
 			children = (
-				8D1349071E8EBEDC006DEC19 /* Ventio */,
-				8D1349061E8EBEDC006DEC19 /* Products */,
+				8D1349301E8EC7AE006DEC19 /* Ventio */,
+				8D13492F1E8EC7AE006DEC19 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8D1349061E8EBEDC006DEC19 /* Products */ = {
+		8D13492F1E8EC7AE006DEC19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1349051E8EBEDC006DEC19 /* Ventio.app */,
+				8D13492E1E8EC7AE006DEC19 /* Ventio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D1349071E8EBEDC006DEC19 /* Ventio */ = {
+		8D1349301E8EC7AE006DEC19 /* Ventio */ = {
 			isa = PBXGroup;
 			children = (
-				8D1349081E8EBEDC006DEC19 /* AppDelegate.swift */,
-				8D13490A1E8EBEDC006DEC19 /* ViewController.swift */,
-				8D13490C1E8EBEDC006DEC19 /* Main.storyboard */,
-				8D1349121E8EBEDC006DEC19 /* Assets.xcassets */,
-				8D1349141E8EBEDC006DEC19 /* LaunchScreen.storyboard */,
-				8D1349171E8EBEDC006DEC19 /* Info.plist */,
-				8D13490F1E8EBEDC006DEC19 /* Ventio.xcdatamodeld */,
+				8D8FE3DD1E8EE83300B87A27 /* Data */,
+				8D6F66171E8EF96300ABCE96 /* Config */,
+				8D6F66141E8EF85A00ABCE96 /* Extensions */,
+				8D6F66091E8EF65F00ABCE96 /* Models */,
+				8D8FE3DC1E8EE82300B87A27 /* Services */,
+				8D4FA5131E8EF0D40009A604 /* Controllers */,
+				8D1349311E8EC7AE006DEC19 /* AppDelegate.swift */,
+				8D1349351E8EC7AE006DEC19 /* Main.storyboard */,
+				8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */,
+				8D13493D1E8EC7AE006DEC19 /* LaunchScreen.storyboard */,
+				8D1349401E8EC7AE006DEC19 /* Info.plist */,
+				8D1349381E8EC7AE006DEC19 /* Ventio.xcdatamodeld */,
 			);
 			path = Ventio;
+			sourceTree = "<group>";
+		};
+		8D4FA5131E8EF0D40009A604 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D1349461E8EC7FF006DEC19 /* Controllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8D6F66091E8EF65F00ABCE96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F66071E8EF65B00ABCE96 /* Models */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8D6F66141E8EF85A00ABCE96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F66121E8EF85600ABCE96 /* Extensions */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8D6F66171E8EF96300ABCE96 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F66151E8EF96100ABCE96 /* Config */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		8D8FE3DC1E8EE82300B87A27 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D13494A1E8EC80F006DEC19 /* Services */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8D8FE3DD1E8EE83300B87A27 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8D1349481E8EC808006DEC19 /* Data */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1349041E8EBEDC006DEC19 /* Ventio */ = {
+		8D13492D1E8EC7AE006DEC19 /* Ventio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D13491A1E8EBEDC006DEC19 /* Build configuration list for PBXNativeTarget "Ventio" */;
+			buildConfigurationList = 8D1349431E8EC7AE006DEC19 /* Build configuration list for PBXNativeTarget "Ventio" */;
 			buildPhases = (
-				8D1349011E8EBEDC006DEC19 /* Sources */,
-				8D1349021E8EBEDC006DEC19 /* Frameworks */,
-				8D1349031E8EBEDC006DEC19 /* Resources */,
+				8D13492A1E8EC7AE006DEC19 /* Sources */,
+				8D13492B1E8EC7AE006DEC19 /* Frameworks */,
+				8D13492C1E8EC7AE006DEC19 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,26 +147,26 @@
 			);
 			name = Ventio;
 			productName = Ventio;
-			productReference = 8D1349051E8EBEDC006DEC19 /* Ventio.app */;
+			productReference = 8D13492E1E8EC7AE006DEC19 /* Ventio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8D1348FD1E8EBEDC006DEC19 /* Project object */ = {
+		8D1349261E8EC7AE006DEC19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Georgi Karaboichev";
 				TargetAttributes = {
-					8D1349041E8EBEDC006DEC19 = {
+					8D13492D1E8EC7AE006DEC19 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8D1349001E8EBEDC006DEC19 /* Build configuration list for PBXProject "Ventio" */;
+			buildConfigurationList = 8D1349291E8EC7AE006DEC19 /* Build configuration list for PBXProject "Ventio" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +174,60 @@
 				en,
 				Base,
 			);
-			mainGroup = 8D1348FC1E8EBEDC006DEC19;
-			productRefGroup = 8D1349061E8EBEDC006DEC19 /* Products */;
+			mainGroup = 8D1349251E8EC7AE006DEC19;
+			productRefGroup = 8D13492F1E8EC7AE006DEC19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1349041E8EBEDC006DEC19 /* Ventio */,
+				8D13492D1E8EC7AE006DEC19 /* Ventio */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D1349031E8EBEDC006DEC19 /* Resources */ = {
+		8D13492C1E8EC7AE006DEC19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D1349161E8EBEDC006DEC19 /* LaunchScreen.storyboard in Resources */,
-				8D1349131E8EBEDC006DEC19 /* Assets.xcassets in Resources */,
-				8D13490E1E8EBEDC006DEC19 /* Main.storyboard in Resources */,
+				8D13494B1E8EC80F006DEC19 /* Services in Resources */,
+				8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */,
+				8D6F66161E8EF96100ABCE96 /* Config in Resources */,
+				8D6F66131E8EF85600ABCE96 /* Extensions in Resources */,
+				8D13493C1E8EC7AE006DEC19 /* Assets.xcassets in Resources */,
+				8D1349491E8EC808006DEC19 /* Data in Resources */,
+				8D1349471E8EC7FF006DEC19 /* Controllers in Resources */,
+				8D6F66081E8EF65B00ABCE96 /* Models in Resources */,
+				8D1349371E8EC7AE006DEC19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D1349011E8EBEDC006DEC19 /* Sources */ = {
+		8D13492A1E8EC7AE006DEC19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D1349111E8EBEDC006DEC19 /* Ventio.xcdatamodeld in Sources */,
-				8D13490B1E8EBEDC006DEC19 /* ViewController.swift in Sources */,
-				8D1349091E8EBEDC006DEC19 /* AppDelegate.swift in Sources */,
+				8D13493A1E8EC7AE006DEC19 /* Ventio.xcdatamodeld in Sources */,
+				8D1349321E8EC7AE006DEC19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D13490C1E8EBEDC006DEC19 /* Main.storyboard */ = {
+		8D1349351E8EC7AE006DEC19 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D13490D1E8EBEDC006DEC19 /* Base */,
+				8D1349361E8EC7AE006DEC19 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8D1349141E8EBEDC006DEC19 /* LaunchScreen.storyboard */ = {
+		8D13493D1E8EC7AE006DEC19 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D1349151E8EBEDC006DEC19 /* Base */,
+				8D13493E1E8EC7AE006DEC19 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +235,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8D1349181E8EBEDC006DEC19 /* Debug */ = {
+		8D1349411E8EC7AE006DEC19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -218,7 +286,7 @@
 			};
 			name = Debug;
 		};
-		8D1349191E8EBEDC006DEC19 /* Release */ = {
+		8D1349421E8EC7AE006DEC19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,7 +330,7 @@
 			};
 			name = Release;
 		};
-		8D13491B1E8EBEDC006DEC19 /* Debug */ = {
+		8D1349441E8EC7AE006DEC19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -274,7 +342,7 @@
 			};
 			name = Debug;
 		};
-		8D13491C1E8EBEDC006DEC19 /* Release */ = {
+		8D1349451E8EC7AE006DEC19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,37 +357,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D1349001E8EBEDC006DEC19 /* Build configuration list for PBXProject "Ventio" */ = {
+		8D1349291E8EC7AE006DEC19 /* Build configuration list for PBXProject "Ventio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D1349181E8EBEDC006DEC19 /* Debug */,
-				8D1349191E8EBEDC006DEC19 /* Release */,
+				8D1349411E8EC7AE006DEC19 /* Debug */,
+				8D1349421E8EC7AE006DEC19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D13491A1E8EBEDC006DEC19 /* Build configuration list for PBXNativeTarget "Ventio" */ = {
+		8D1349431E8EC7AE006DEC19 /* Build configuration list for PBXNativeTarget "Ventio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D13491B1E8EBEDC006DEC19 /* Debug */,
-				8D13491C1E8EBEDC006DEC19 /* Release */,
+				8D1349441E8EC7AE006DEC19 /* Debug */,
+				8D1349451E8EC7AE006DEC19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8D13490F1E8EBEDC006DEC19 /* Ventio.xcdatamodeld */ = {
+		8D1349381E8EC7AE006DEC19 /* Ventio.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8D1349101E8EBEDC006DEC19 /* Ventio.xcdatamodel */,
+				8D1349391E8EC7AE006DEC19 /* Ventio.xcdatamodel */,
 			);
-			currentVersion = 8D1349101E8EBEDC006DEC19 /* Ventio.xcdatamodel */;
+			currentVersion = 8D1349391E8EC7AE006DEC19 /* Ventio.xcdatamodel */;
 			path = Ventio.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 8D1348FD1E8EBEDC006DEC19 /* Project object */;
+	rootObject = 8D1349261E8EC7AE006DEC19 /* Project object */;
 }
