@@ -6,7 +6,7 @@ extension SwinjectStoryboard
     class func setup()
     {
         Container.loggingFunction = nil
-    
+        
         setupViewConrollers(defaultContainer)
         setupHelpers(defaultContainer)
         setupData(defaultContainer)
@@ -16,11 +16,11 @@ extension SwinjectStoryboard
 
 private func setupViewConrollers(_ defaultContainer: Container)
 {
-    defaultContainer.storyboardInitCompleted(LgoinRegisterViewController.self)
+    defaultContainer.storyboardInitCompleted(AccountViewController.self)
     { (r, c) in
         c.userData = r.resolve(UserDataProtocol.self)
     }
-    
+
 }
 
 private func setupHelpers(_ defaultContainer: Container)
@@ -33,6 +33,7 @@ private func setupHelpers(_ defaultContainer: Container)
 
 private func setupData(_ defaultContainer: Container)
 {
+
     defaultContainer.register(UserDataProtocol.self)
     { r in
         UserData(requester: r.resolve(RequesterProcol.self)!)

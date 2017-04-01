@@ -7,39 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290B200AA693B833593CC65B /* Pods_Ventio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAEDCDB4E8316B10192AC55 /* Pods_Ventio.framework */; };
 		8D1349321E8EC7AE006DEC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349311E8EC7AE006DEC19 /* AppDelegate.swift */; };
 		8D1349371E8EC7AE006DEC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349351E8EC7AE006DEC19 /* Main.storyboard */; };
 		8D13493A1E8EC7AE006DEC19 /* Ventio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349381E8EC7AE006DEC19 /* Ventio.xcdatamodeld */; };
 		8D13493C1E8EC7AE006DEC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */; };
 		8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493D1E8EC7AE006DEC19 /* LaunchScreen.storyboard */; };
-<<<<<<< HEAD
-=======
-		8D1349471E8EC7FF006DEC19 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349461E8EC7FF006DEC19 /* Controllers */; };
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-		8D1349491E8EC808006DEC19 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 8D1349481E8EC808006DEC19 /* Data */; };
-		8D13494B1E8EC80F006DEC19 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 8D13494A1E8EC80F006DEC19 /* Services */; };
-		8D6F66081E8EF65B00ABCE96 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F66071E8EF65B00ABCE96 /* Models */; };
-		8D6F66131E8EF85600ABCE96 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F66121E8EF85600ABCE96 /* Extensions */; };
-		8D6F66161E8EF96100ABCE96 /* Config in Resources */ = {isa = PBXBuildFile; fileRef = 8D6F66151E8EF96100ABCE96 /* Config */; };
-<<<<<<< HEAD
-		8D7294081E8FBA7D00FDB195 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 8D7294071E8FBA7D00FDB195 /* Controllers */; };
-		8DAD44A51E8FC86600499AB9 /* Controllers in Sources */ = {isa = PBXBuildFile; fileRef = 8D7294071E8FBA7D00FDB195 /* Controllers */; };
-		8DAD44A61E8FC89200499AB9 /* Config in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F66151E8EF96100ABCE96 /* Config */; };
-		8DAD44A71E8FC89E00499AB9 /* Extensions in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F66121E8EF85600ABCE96 /* Extensions */; };
-		8DAD44A81E8FC8A100499AB9 /* Data in Sources */ = {isa = PBXBuildFile; fileRef = 8D1349481E8EC808006DEC19 /* Data */; };
-		8DAD44A91E8FC8AE00499AB9 /* Models in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F66071E8EF65B00ABCE96 /* Models */; };
-		8DAD44AB1E8FC8BC00499AB9 /* Services in Sources */ = {isa = PBXBuildFile; fileRef = 8D13494A1E8EC80F006DEC19 /* Services */; };
-		A6C5112882418257ED862F0D /* Pods_Ventio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5401C9B6C74687112B729F /* Pods_Ventio.framework */; };
+		8DEFB43D1E8FE58100863CD7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */; };
+		8DEFB43F1E8FE60F00863CD7 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43E1E8FE60F00863CD7 /* Requester.swift */; };
+		8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */; };
+		8DEFB4431E8FE66500863CD7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4421E8FE66500863CD7 /* UserData.swift */; };
+		8DEFB4451E8FE67300863CD7 /* UserDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4441E8FE67300863CD7 /* UserDataProtocol.swift */; };
+		8DEFB4471E8FE69C00863CD7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4461E8FE69C00863CD7 /* API.swift */; };
+		8DEFB4491E8FE6DA00863CD7 /* SwinjectSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4481E8FE6DA00863CD7 /* SwinjectSetup.swift */; };
+		8DEFB44B1E8FE6EE00863CD7 /* StringCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB44A1E8FE6EE00863CD7 /* StringCount.swift */; };
+		8DEFB44D1E8FE71000863CD7 /* UIViewControllerLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB44C1E8FE71000863CD7 /* UIViewControllerLoading.swift */; };
+		8DEFB44F1E8FE73200863CD7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB44E1E8FE73200863CD7 /* Response.swift */; };
+		8DEFB4511E8FE73C00863CD7 /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4501E8FE73C00863CD7 /* ResponseProtocol.swift */; };
+		8DEFB4531E8FE76100863CD7 /* ResponseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4521E8FE76100863CD7 /* ResponseFactory.swift */; };
+		8DEFB4551E8FE78300863CD7 /* ResponseFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4541E8FE78300863CD7 /* ResponseFactoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C5401C9B6C74687112B729F /* Pods_Ventio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ventio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82229992295032ADF7D6E5B2 /* Pods-Ventio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ventio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ventio/Pods-Ventio.release.xcconfig"; sourceTree = "<group>"; };
-=======
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
+		46568C526372146A0EA2B9F9 /* Pods-Ventio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ventio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ventio/Pods-Ventio.debug.xcconfig"; sourceTree = "<group>"; };
+		7C8B1D45DA9C40E90DC3EFE0 /* Pods-Ventio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ventio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ventio/Pods-Ventio.release.xcconfig"; sourceTree = "<group>"; };
 		8D13492E1E8EC7AE006DEC19 /* Ventio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ventio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1349311E8EC7AE006DEC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D1349361E8EC7AE006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,20 +38,20 @@
 		8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D13493E1E8EC7AE006DEC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1349401E8EC7AE006DEC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		8D1349461E8EC7FF006DEC19 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-		8D1349481E8EC808006DEC19 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
-		8D13494A1E8EC80F006DEC19 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
-		8D6F66071E8EF65B00ABCE96 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
-		8D6F66121E8EF85600ABCE96 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
-		8D6F66151E8EF96100ABCE96 /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		8D7294071E8FBA7D00FDB195 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
-		95AB7D00F9791F537166E16C /* Pods-Ventio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ventio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ventio/Pods-Ventio.debug.xcconfig"; sourceTree = "<group>"; };
-=======
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
+		8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		8DEFB43E1E8FE60F00863CD7 /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequesterProtocol.swift; sourceTree = "<group>"; };
+		8DEFB4421E8FE66500863CD7 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8DEFB4441E8FE67300863CD7 /* UserDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataProtocol.swift; sourceTree = "<group>"; };
+		8DEFB4461E8FE69C00863CD7 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8DEFB4481E8FE6DA00863CD7 /* SwinjectSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSetup.swift; sourceTree = "<group>"; };
+		8DEFB44A1E8FE6EE00863CD7 /* StringCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCount.swift; sourceTree = "<group>"; };
+		8DEFB44C1E8FE71000863CD7 /* UIViewControllerLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerLoading.swift; sourceTree = "<group>"; };
+		8DEFB44E1E8FE73200863CD7 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		8DEFB4501E8FE73C00863CD7 /* ResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
+		8DEFB4521E8FE76100863CD7 /* ResponseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseFactory.swift; sourceTree = "<group>"; };
+		8DEFB4541E8FE78300863CD7 /* ResponseFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseFactoryProtocol.swift; sourceTree = "<group>"; };
+		8FAEDCDB4E8316B10192AC55 /* Pods_Ventio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ventio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,35 +59,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C5112882418257ED862F0D /* Pods_Ventio.framework in Frameworks */,
+				290B200AA693B833593CC65B /* Pods_Ventio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
-		2BE9736ACED8B664A79A5199 /* Pods */ = {
+		7C0E25E3AC88B9E6CD3AF5E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95AB7D00F9791F537166E16C /* Pods-Ventio.debug.xcconfig */,
-				82229992295032ADF7D6E5B2 /* Pods-Ventio.release.xcconfig */,
-=======
-		8D1349251E8EC7AE006DEC19 = {
-			isa = PBXGroup;
-			children = (
-				8D1349301E8EC7AE006DEC19 /* Ventio */,
-				8D13492F1E8EC7AE006DEC19 /* Products */,
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-<<<<<<< HEAD
-		666A00E40033DA89A3F347A3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2C5401C9B6C74687112B729F /* Pods_Ventio.framework */,
+				8FAEDCDB4E8316B10192AC55 /* Pods_Ventio.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,19 +79,14 @@
 			children = (
 				8D1349301E8EC7AE006DEC19 /* Ventio */,
 				8D13492F1E8EC7AE006DEC19 /* Products */,
-				2BE9736ACED8B664A79A5199 /* Pods */,
-				666A00E40033DA89A3F347A3 /* Frameworks */,
+				D0DFE4BD67603E67206FA11C /* Pods */,
+				7C0E25E3AC88B9E6CD3AF5E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8D13492F1E8EC7AE006DEC19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-=======
-		8D13492F1E8EC7AE006DEC19 /* Products */ = {
-			isa = PBXGroup;
-			children = (
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
 				8D13492E1E8EC7AE006DEC19 /* Ventio.app */,
 			);
 			name = Products;
@@ -127,19 +95,12 @@
 		8D1349301E8EC7AE006DEC19 /* Ventio */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				8D7294061E8FBA6700FDB195 /* Controllers */,
-=======
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-				8D8FE3DD1E8EE83300B87A27 /* Data */,
-				8D6F66171E8EF96300ABCE96 /* Config */,
-				8D6F66141E8EF85A00ABCE96 /* Extensions */,
-				8D6F66091E8EF65F00ABCE96 /* Models */,
-				8D8FE3DC1E8EE82300B87A27 /* Services */,
-<<<<<<< HEAD
-=======
-				8D4FA5131E8EF0D40009A604 /* Controllers */,
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
+				8DEFB43A1E8FE54B00863CD7 /* Models */,
+				8DEFB4391E8FE54800863CD7 /* Extensions */,
+				8DEFB4381E8FE54400863CD7 /* Config */,
+				8DEFB4371E8FE54100863CD7 /* Data */,
+				8DEFB4361E8FE53C00863CD7 /* Services */,
+				8DEFB4351E8FE53500863CD7 /* Controllers */,
 				8D1349311E8EC7AE006DEC19 /* AppDelegate.swift */,
 				8D1349351E8EC7AE006DEC19 /* Main.storyboard */,
 				8D13493B1E8EC7AE006DEC19 /* Assets.xcassets */,
@@ -150,66 +111,76 @@
 			path = Ventio;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
-		8D4FA5131E8EF0D40009A604 /* Controllers */ = {
+		8DEFB4351E8FE53500863CD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8D1349461E8EC7FF006DEC19 /* Controllers */,
+				8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-		8D6F66091E8EF65F00ABCE96 /* Models */ = {
+		8DEFB4361E8FE53C00863CD7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8D6F66071E8EF65B00ABCE96 /* Models */,
+				8DEFB43E1E8FE60F00863CD7 /* Requester.swift */,
+				8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */,
 			);
-			name = Models;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		8D6F66141E8EF85A00ABCE96 /* Extensions */ = {
+		8DEFB4371E8FE54100863CD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8D6F66121E8EF85600ABCE96 /* Extensions */,
+				8DEFB4421E8FE66500863CD7 /* UserData.swift */,
+				8DEFB4441E8FE67300863CD7 /* UserDataProtocol.swift */,
 			);
-			name = Extensions;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		8D6F66171E8EF96300ABCE96 /* Config */ = {
+		8DEFB4381E8FE54400863CD7 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				8D6F66151E8EF96100ABCE96 /* Config */,
+				8DEFB4461E8FE69C00863CD7 /* API.swift */,
 			);
-			name = Config;
+			path = Config;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		8D7294061E8FBA6700FDB195 /* Controllers */ = {
+		8DEFB4391E8FE54800863CD7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8D7294071E8FBA7D00FDB195 /* Controllers */,
+				8DEFB4481E8FE6DA00863CD7 /* SwinjectSetup.swift */,
+				8DEFB44A1E8FE6EE00863CD7 /* StringCount.swift */,
+				8DEFB44C1E8FE71000863CD7 /* UIViewControllerLoading.swift */,
 			);
-			name = Controllers;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-		8D8FE3DC1E8EE82300B87A27 /* Services */ = {
+		8DEFB43A1E8FE54B00863CD7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8D13494A1E8EC80F006DEC19 /* Services */,
+				8DEFB43B1E8FE56000863CD7 /* Factories */,
+				8DEFB44E1E8FE73200863CD7 /* Response.swift */,
+				8DEFB4501E8FE73C00863CD7 /* ResponseProtocol.swift */,
 			);
-			name = Services;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		8D8FE3DD1E8EE83300B87A27 /* Data */ = {
+		8DEFB43B1E8FE56000863CD7 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				8D1349481E8EC808006DEC19 /* Data */,
+				8DEFB4521E8FE76100863CD7 /* ResponseFactory.swift */,
+				8DEFB4541E8FE78300863CD7 /* ResponseFactoryProtocol.swift */,
 			);
-			name = Data;
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		D0DFE4BD67603E67206FA11C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46568C526372146A0EA2B9F9 /* Pods-Ventio.debug.xcconfig */,
+				7C8B1D45DA9C40E90DC3EFE0 /* Pods-Ventio.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,18 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D1349431E8EC7AE006DEC19 /* Build configuration list for PBXNativeTarget "Ventio" */;
 			buildPhases = (
-<<<<<<< HEAD
-				807AFBDA279B24ED933631CE /* [CP] Check Pods Manifest.lock */,
+				25A323E3CF342743C2F632D6 /* [CP] Check Pods Manifest.lock */,
 				8D13492A1E8EC7AE006DEC19 /* Sources */,
 				8D13492B1E8EC7AE006DEC19 /* Frameworks */,
 				8D13492C1E8EC7AE006DEC19 /* Resources */,
-				BD315A17B2184C7EAD9C4414 /* [CP] Embed Pods Frameworks */,
-				472700F9ABD23EAE4E69D760 /* [CP] Copy Pods Resources */,
-=======
-				8D13492A1E8EC7AE006DEC19 /* Sources */,
-				8D13492B1E8EC7AE006DEC19 /* Frameworks */,
-				8D13492C1E8EC7AE006DEC19 /* Resources */,
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
+				F3B9D750B52F9A65193F9C87 /* [CP] Embed Pods Frameworks */,
+				472CFA5A4DC3E57C6F45477E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,19 +245,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D13494B1E8EC80F006DEC19 /* Services in Resources */,
 				8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */,
-				8D6F66161E8EF96100ABCE96 /* Config in Resources */,
-				8D6F66131E8EF85600ABCE96 /* Extensions in Resources */,
 				8D13493C1E8EC7AE006DEC19 /* Assets.xcassets in Resources */,
-<<<<<<< HEAD
-				8D7294081E8FBA7D00FDB195 /* Controllers in Resources */,
-				8D1349491E8EC808006DEC19 /* Data in Resources */,
-=======
-				8D1349491E8EC808006DEC19 /* Data in Resources */,
-				8D1349471E8EC7FF006DEC19 /* Controllers in Resources */,
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
-				8D6F66081E8EF65B00ABCE96 /* Models in Resources */,
 				8D1349371E8EC7AE006DEC19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,22 +254,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		472700F9ABD23EAE4E69D760 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ventio/Pods-Ventio-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		807AFBDA279B24ED933631CE /* [CP] Check Pods Manifest.lock */ = {
+		25A323E3CF342743C2F632D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,7 +269,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BD315A17B2184C7EAD9C4414 /* [CP] Embed Pods Frameworks */ = {
+		472CFA5A4DC3E57C6F45477E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ventio/Pods-Ventio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B9D750B52F9A65193F9C87 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,17 +306,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				8DAD44AB1E8FC8BC00499AB9 /* Services in Sources */,
-				8DAD44A91E8FC8AE00499AB9 /* Models in Sources */,
-				8DAD44A81E8FC8A100499AB9 /* Data in Sources */,
-				8DAD44A71E8FC89E00499AB9 /* Extensions in Sources */,
-				8DAD44A61E8FC89200499AB9 /* Config in Sources */,
-				8DAD44A51E8FC86600499AB9 /* Controllers in Sources */,
-=======
->>>>>>> 94f11fe14486e8eb61dd207c895f9041f8e4656a
+				8DEFB4431E8FE66500863CD7 /* UserData.swift in Sources */,
 				8D13493A1E8EC7AE006DEC19 /* Ventio.xcdatamodeld in Sources */,
 				8D1349321E8EC7AE006DEC19 /* AppDelegate.swift in Sources */,
+				8DEFB43F1E8FE60F00863CD7 /* Requester.swift in Sources */,
+				8DEFB44F1E8FE73200863CD7 /* Response.swift in Sources */,
+				8DEFB4551E8FE78300863CD7 /* ResponseFactoryProtocol.swift in Sources */,
+				8DEFB44B1E8FE6EE00863CD7 /* StringCount.swift in Sources */,
+				8DEFB4451E8FE67300863CD7 /* UserDataProtocol.swift in Sources */,
+				8DEFB4491E8FE6DA00863CD7 /* SwinjectSetup.swift in Sources */,
+				8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */,
+				8DEFB4471E8FE69C00863CD7 /* API.swift in Sources */,
+				8DEFB44D1E8FE71000863CD7 /* UIViewControllerLoading.swift in Sources */,
+				8DEFB4511E8FE73C00863CD7 /* ResponseProtocol.swift in Sources */,
+				8DEFB43D1E8FE58100863CD7 /* AccountViewController.swift in Sources */,
+				8DEFB4531E8FE76100863CD7 /* ResponseFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +443,7 @@
 		};
 		8D1349441E8EC7AE006DEC19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95AB7D00F9791F537166E16C /* Pods-Ventio.debug.xcconfig */;
+			baseConfigurationReference = 46568C526372146A0EA2B9F9 /* Pods-Ventio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ventio/Info.plist;
@@ -498,7 +456,7 @@
 		};
 		8D1349451E8EC7AE006DEC19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82229992295032ADF7D6E5B2 /* Pods-Ventio.release.xcconfig */;
+			baseConfigurationReference = 7C8B1D45DA9C40E90DC3EFE0 /* Pods-Ventio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ventio/Info.plist;
