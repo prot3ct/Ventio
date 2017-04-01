@@ -34,7 +34,7 @@ public class UserData: UserDataProtocol
             "username": username.lowercased(),
             "passHash": password
         ]
-        
+        print(userCredentials)
         return self.requester.post(API.registerUrl, parameters: userCredentials)
     }
 }

@@ -131,8 +131,8 @@
 		8DEFB4371E8FE54100863CD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFB4421E8FE66500863CD7 /* UserData.swift */,
 				8DEFB4441E8FE67300863CD7 /* UserDataProtocol.swift */,
+				8DEFB4421E8FE66500863CD7 /* UserData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
