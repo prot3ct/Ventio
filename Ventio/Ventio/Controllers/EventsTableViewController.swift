@@ -9,7 +9,8 @@
 import UIKit
 
 class EventsTableViewController: UITableViewController {
-
+    internal var userData: UserDataProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +33,21 @@ class EventsTableViewController: UITableViewController {
         return 0
     }
 
+    @IBAction func onLogoutClicked(_ sender: UIButton) {
+        self.startLoading()
+        self.userData.signOut()
+        self.changeInitialViewController(identifier: "accountViewController")
+        self.showSuccess(withStatus: "You have signed out successfully")
+    }
+    
+    private func changeInitialViewController(identifier: String)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard
+            .instantiateViewController(withIdentifier: identifier)
+        UIApplication.shared.keyWindow?.rootViewController = initialViewController
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
