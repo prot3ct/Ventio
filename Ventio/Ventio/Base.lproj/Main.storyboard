@@ -278,17 +278,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0T-Nd-IpP">
-                                <rect key="frame" x="101" y="531" width="172" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Delete">
-                                    <color key="titleColor" red="0.97573267487046633" green="0.0" blue="0.019408777134860195" alpha="0.61971830985915488" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onDeleteClicked:" destination="GAA-0I-yXd" eventType="touchUpInside" id="mze-pj-nzv"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM9-sc-7ty">
                                 <rect key="frame" x="16" y="474" width="116" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,6 +299,17 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="qOp-0v-dI5" kind="show" id="Smv-U3-VQ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0T-Nd-IpP">
+                                <rect key="frame" x="16" y="531" width="339" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Delete this event">
+                                    <color key="titleColor" red="0.97573267487046633" green="0.0" blue="0.019408777134860195" alpha="0.61971830985915488" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDeleteClicked:" destination="GAA-0I-yXd" eventType="touchUpInside" id="mze-pj-nzv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -393,6 +393,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="s4N-2R-h7m"/>
+        <segue reference="Smv-U3-VQ8"/>
     </inferredMetricsTieBreakers>
 </document>
