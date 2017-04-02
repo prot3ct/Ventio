@@ -121,7 +121,6 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
             as! FriendEventsTableViewController
      
         friendEventsTableViewController.currentUsername = usernameAtIndexPath
-        self.navigationController?.show(friendEventsTableViewController, sender: self)
      
         self.friendsTableView.deselectRow(at: indexPath, animated: true)
         UIApplication.shared.keyWindow?.rootViewController = friendEventsTableViewController

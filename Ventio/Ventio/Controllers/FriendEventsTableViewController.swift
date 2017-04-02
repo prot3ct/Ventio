@@ -22,7 +22,7 @@ class FriendEventsTableViewController: UIViewController, UITableViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.friendEventsTitle.text = "\(self.currentUsername)'s Events"
+        self.friendEventsTitle.text = "\(self.currentUsername!)'s Events"
         
         self.friendEventsTableView.delegate = self
         self.friendEventsTableView.dataSource = self

@@ -97,8 +97,7 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
             as! EventDetailsViewController
         
         eventDetailsViewController.currentEvent = eventAtIndexPath
-        self.navigationController?.show(eventDetailsViewController, sender: self)
-        
+            
         self.eventsTableView.deselectRow(at: indexPath, animated: true)
         UIApplication.shared.keyWindow?.rootViewController = eventDetailsViewController
     }
