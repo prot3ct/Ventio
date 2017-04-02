@@ -38,6 +38,10 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
             })
             .disposed(by: disposeBag)
         
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
@@ -66,8 +70,10 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                changeInitialViewController(identifier: "logoutViewController")
             case UISwipeGestureRecognizerDirection.left:
-                changeInitialViewController(identifier: "eventsTableViewController")
+                changeInitialViewController(identifier: "myFriendsViewController")
             default:
                 break
             }
