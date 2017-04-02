@@ -71,7 +71,6 @@ public class UserData: UserDataProtocol
                 Observable.from(JSON($0.body!)["result"].arrayValue)
             }
             .map { friendJSON in
-                print(friendJSON)
                 let friendUsername = friendJSON["friends"][counter].string
                 
                 counter += 1
