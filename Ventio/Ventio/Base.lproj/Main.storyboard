@@ -12,7 +12,7 @@
         <!--My Friends-->
         <scene sceneID="Ha5-aL-B1d">
             <objects>
-                <viewController id="v8E-ow-X5R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myFriendsViewController" id="v8E-ow-X5R" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VlZ-fw-JKf"/>
                         <viewControllerLayoutGuide type="bottom" id="0rL-GS-Icd"/>
@@ -164,7 +164,7 @@
         <!--Logout-->
         <scene sceneID="1bu-nb-Iwr">
             <objects>
-                <viewController id="HML-nX-LMs" customClass="LogoutViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logoutViewController" id="HML-nX-LMs" customClass="LogoutViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="90V-EF-Ju7"/>
                         <viewControllerLayoutGuide type="bottom" id="oga-j1-1o9"/>
