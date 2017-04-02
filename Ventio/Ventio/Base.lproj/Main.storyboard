@@ -67,7 +67,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Friends" id="BWk-aJ-zDg"/>
+                    <tabBarItem key="tabBarItem" title="My Friends" id="ngx-5v-2Qw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="friendUsernameTextField" destination="frO-n5-MuI" id="BsK-XJ-DLe"/>
                         <outlet property="friendsTableView" destination="Pnb-XH-GKV" id="0Sa-rB-Mtw"/>
@@ -75,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlx-oD-9k1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143.19999999999999" y="-1544.0779610194904"/>
+            <point key="canvasLocation" x="-95" y="-1459"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="j9d-Mb-WtM">
@@ -201,9 +202,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="v8E-ow-X5R" kind="relationship" relationship="viewControllers" id="LUG-O2-wx1"/>
                         <segue destination="qOp-0v-dI5" kind="relationship" relationship="viewControllers" id="WPJ-by-KXq"/>
-                        <segue destination="HML-nX-LMs" kind="relationship" relationship="viewControllers" id="rXU-2Q-bgb"/>
+                        <segue destination="v8E-ow-X5R" kind="relationship" relationship="viewControllers" id="CmO-FO-oJK"/>
+                        <segue destination="HML-nX-LMs" kind="relationship" relationship="viewControllers" id="FLn-Dx-e8T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A49-SX-D0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,10 +219,15 @@
                         <viewControllerLayoutGuide type="top" id="90V-EF-Ju7"/>
                         <viewControllerLayoutGuide type="bottom" id="oga-j1-1o9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vdU-7P-ZbP">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="vdU-7P-ZbP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <tabBarItem key="tabBarItem" title="Logout" id="luD-bD-OVE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
