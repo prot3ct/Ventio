@@ -20,8 +20,11 @@ class EventDetailsViewController: UIViewController
         self.eventDate.text = currentEvent.date
         self.eventTime.text = currentEvent.time
         self.eventCreator.text = currentEvent.creator
+        
+        self.eventDescription.layer.borderWidth = CGFloat(1.0)
+        self.eventDescription.layer.cornerRadius = CGFloat(5.0)
     }
     @IBAction func onDeleteClicked(_ sender: Any) {
-        
+        // TO DO
     }
 }

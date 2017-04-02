@@ -24,7 +24,7 @@ class CreateEventViewController: UIViewController {
     @IBAction func onCreateClicked(_ sender: UIButton) {
         self.startLoading()
         
-        let title = self.timeTextField.text
+        let title = self.titleTextField.text
         let description = self.descriptionTextField.text
         let time = self.timeTextField.text
         let date = self.dateTextField.text
@@ -35,7 +35,7 @@ class CreateEventViewController: UIViewController {
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { res in
-                //self.changeInitialViewController(identifier: "homeAuthVC")
+                self.changeInitialViewController(identifier: "eventsTableViewController")
                 self.showSuccess(withStatus: "You have saved your event successfully.")
             }, onError: { error in
                 print(error)
@@ -43,4 +43,11 @@ class CreateEventViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
-}
+    
+    private func changeInitialViewController(identifier: String)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard
+            .instantiateViewController(withIdentifier: identifier)
+        UIApplication.shared.keyWindow?.rootViewController = initialViewController
+    }}
