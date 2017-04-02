@@ -26,6 +26,10 @@
 		8DD2D7AE1E9023B6005867B2 /* UserDefaultsContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */; };
 		8DD3560F1E91649700263481 /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3560E1E91649700263481 /* MyFriendsViewController.swift */; };
 		8DD356111E91917F00263481 /* FriendEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD356101E91917F00263481 /* FriendEventsTableViewController.swift */; };
+		8DD356171E91B3D700263481 /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD356131E91B3D700263481 /* base.png */; };
+		8DD356181E91B3D700263481 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD356141E91B3D700263481 /* logout.png */; };
+		8DD356191E91B3D700263481 /* my-events.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD356151E91B3D700263481 /* my-events.png */; };
+		8DD3561A1E91B3D700263481 /* my-friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD356161E91B3D700263481 /* my-friends.png */; };
 		8DEFB43D1E8FE58100863CD7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */; };
 		8DEFB43F1E8FE60F00863CD7 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43E1E8FE60F00863CD7 /* Requester.swift */; };
 		8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */; };
@@ -64,6 +68,10 @@
 		8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsContains.swift; sourceTree = "<group>"; };
 		8DD3560E1E91649700263481 /* MyFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
 		8DD356101E91917F00263481 /* FriendEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendEventsTableViewController.swift; sourceTree = "<group>"; };
+		8DD356131E91B3D700263481 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
+		8DD356141E91B3D700263481 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		8DD356151E91B3D700263481 /* my-events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-events.png"; sourceTree = "<group>"; };
+		8DD356161E91B3D700263481 /* my-friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-friends.png"; sourceTree = "<group>"; };
 		8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8DEFB43E1E8FE60F00863CD7 /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequesterProtocol.swift; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 		8D1349251E8EC7AE006DEC19 = {
 			isa = PBXGroup;
 			children = (
+				8DD356121E91B3D700263481 /* Images */,
 				8D1349301E8EC7AE006DEC19 /* Ventio */,
 				8D13492F1E8EC7AE006DEC19 /* Products */,
 				D0DFE4BD67603E67206FA11C /* Pods */,
@@ -135,6 +144,17 @@
 				8D1349381E8EC7AE006DEC19 /* Ventio.xcdatamodeld */,
 			);
 			path = Ventio;
+			sourceTree = "<group>";
+		};
+		8DD356121E91B3D700263481 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8DD356131E91B3D700263481 /* base.png */,
+				8DD356141E91B3D700263481 /* logout.png */,
+				8DD356151E91B3D700263481 /* my-events.png */,
+				8DD356161E91B3D700263481 /* my-friends.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		8DEFB4351E8FE53500863CD7 /* Controllers */ = {
@@ -284,8 +304,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD356191E91B3D700263481 /* my-events.png in Resources */,
 				8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */,
 				8D13493C1E8EC7AE006DEC19 /* Assets.xcassets in Resources */,
+				8DD3561A1E91B3D700263481 /* my-friends.png in Resources */,
+				8DD356181E91B3D700263481 /* logout.png in Resources */,
+				8DD356171E91B3D700263481 /* base.png in Resources */,
 				8D1349371E8EC7AE006DEC19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

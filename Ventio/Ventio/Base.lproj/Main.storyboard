@@ -67,7 +67,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Friends" id="ngx-5v-2Qw"/>
+                    <tabBarItem key="tabBarItem" title="My Friends" image="my-friends.png" id="ngx-5v-2Qw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="friendUsernameTextField" destination="frO-n5-MuI" id="BsK-XJ-DLe"/>
@@ -312,7 +312,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Logout" id="luD-bD-OVE"/>
+                    <tabBarItem key="tabBarItem" title="Logout" image="logout.png" id="luD-bD-OVE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qj-dn-ewO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -380,7 +380,7 @@
                             <outlet property="delegate" destination="qOp-0v-dI5" id="56v-V7-Mhl"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="My Events" id="R9T-Z2-J0N"/>
+                    <tabBarItem key="tabBarItem" title="My Events" image="my-events.png" id="R9T-Z2-J0N"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="eventsTableView" destination="oEc-W1-Xct" id="h5I-Rd-7rN"/>
@@ -512,7 +512,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRi-3o-U9x">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login/Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRi-3o-U9x">
                                 <rect key="frame" x="16" y="120" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -565,8 +565,13 @@
             <point key="canvasLocation" x="-1644" y="-717"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logout.png" width="29" height="30"/>
+        <image name="my-events.png" width="30" height="30"/>
+        <image name="my-friends.png" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s4N-2R-h7m"/>
-        <segue reference="7n1-3f-8E4"/>
+        <segue reference="WPJ-by-KXq"/>
+        <segue reference="CmO-FO-oJK"/>
     </inferredMetricsTieBreakers>
 </document>
