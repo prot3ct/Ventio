@@ -12,7 +12,6 @@ class LogoutViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("Load")
         self.onLogoutClicked()
     }
     
