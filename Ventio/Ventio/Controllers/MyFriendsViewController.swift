@@ -28,7 +28,7 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: {
-                    self.friends.append($0)
+                    self.friends = $0
             },
                 onError: { error in
                     print(error)
@@ -65,6 +65,8 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.showError(withStatus: "User not found or you have already added this user.")
             })
             .disposed(by: disposeBag)
+        
+        self.friendsTableView.reloadData()
     }
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
@@ -106,22 +108,22 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
         
         return friendCell
     }
-    /*
+    
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
      {
-     let eventAtIndexPath = self.events[indexPath.row]
+        let usernameAtIndexPath = self.friends[indexPath.row]
      
-     let eventDetailsViewController = UIStoryboard(name: "Main", bundle: nil)
-     .instantiateViewController(withIdentifier: "eventDetailsViewController")
-     as! EventDetailsViewController
+        let friendEventsTableViewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "friendEventsTableViewController")
+            as! FriendEventsTableViewController
      
-     eventDetailsViewController.currentEvent = eventAtIndexPath
-     self.navigationController?.show(eventDetailsViewController, sender: self)
+        friendEventsTableViewController.currentUsername = usernameAtIndexPath
+        self.navigationController?.show(friendEventsTableViewController, sender: self)
      
-     self.eventsTableView.deselectRow(at: indexPath, animated: true)
-     UIApplication.shared.keyWindow?.rootViewController = eventDetailsViewController
+        self.friendsTableView.deselectRow(at: indexPath, animated: true)
+        UIApplication.shared.keyWindow?.rootViewController = friendEventsTableViewController
      }
-     */
+ 
 }
 
 class FriendTableViewCell: UITableViewCell

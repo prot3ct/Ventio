@@ -25,6 +25,7 @@
 		8DD2D7AC1E901D93005867B2 /* EventDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7AB1E901D93005867B2 /* EventDataProtocol.swift */; };
 		8DD2D7AE1E9023B6005867B2 /* UserDefaultsContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */; };
 		8DD3560F1E91649700263481 /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3560E1E91649700263481 /* MyFriendsViewController.swift */; };
+		8DD356111E91917F00263481 /* FriendEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD356101E91917F00263481 /* FriendEventsTableViewController.swift */; };
 		8DEFB43D1E8FE58100863CD7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */; };
 		8DEFB43F1E8FE60F00863CD7 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB43E1E8FE60F00863CD7 /* Requester.swift */; };
 		8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */; };
@@ -62,6 +63,7 @@
 		8DD2D7AB1E901D93005867B2 /* EventDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataProtocol.swift; sourceTree = "<group>"; };
 		8DD2D7AD1E9023B6005867B2 /* UserDefaultsContains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsContains.swift; sourceTree = "<group>"; };
 		8DD3560E1E91649700263481 /* MyFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
+		8DD356101E91917F00263481 /* FriendEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendEventsTableViewController.swift; sourceTree = "<group>"; };
 		8DEFB43C1E8FE58100863CD7 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8DEFB43E1E8FE60F00863CD7 /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		8DEFB4401E8FE62300863CD7 /* RequesterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequesterProtocol.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				8DAC5C181E90823000273BE5 /* EventsTableViewController.swift */,
 				8D4D88BE1E913C9F0018C52A /* EventDetailsViewController.swift */,
 				8D4D88C01E9151F60018C52A /* LogoutViewController.swift */,
+				8DD356101E91917F00263481 /* FriendEventsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				8DEFB44F1E8FE73200863CD7 /* Response.swift in Sources */,
 				8DEFB4551E8FE78300863CD7 /* ResponseFactoryProtocol.swift in Sources */,
 				8D4D88BF1E913C9F0018C52A /* EventDetailsViewController.swift in Sources */,
+				8DD356111E91917F00263481 /* FriendEventsTableViewController.swift in Sources */,
 				8DEFB44B1E8FE6EE00863CD7 /* StringCount.swift in Sources */,
 				8DEFB4451E8FE67300863CD7 /* UserDataProtocol.swift in Sources */,
 				8DD3560F1E91649700263481 /* MyFriendsViewController.swift in Sources */,

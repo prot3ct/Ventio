@@ -12,5 +12,5 @@ public protocol UserDataProtocol
     
     func addFriend(username: String) -> Observable<ResponseProtocol>
     
-    func getFriendsForCurrentUser() -> Observable<String>
+    func getFriendsForCurrentUser() -> Observable<[String]>
 }

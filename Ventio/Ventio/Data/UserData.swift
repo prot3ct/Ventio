@@ -60,10 +60,9 @@ public class UserData: UserDataProtocol
         return self.requester.post(API.addFriendForCurrentUserUrl(username: currentUser), parameters: friend)
     }
     
-    public func getFriendsForCurrentUser() -> Observable<String> {
+    public func getFriendsForCurrentUser() -> Observable<[String]> {
         let currentUsername: String = UserDefaults.standard.string(forKey: "username")!
-        
-        var counter: Int = 0;
+
         return self.requester
             .get(API.getFriendsForCurrentUserUrl(username: currentUsername))
             .filter { $0.body != nil }
@@ -71,10 +70,9 @@ public class UserData: UserDataProtocol
                 Observable.from(JSON($0.body!)["result"].arrayValue)
             }
             .map { friendJSON in
-                let friendUsername = friendJSON["friends"][counter].string
-                
-                counter += 1
-                return friendUsername
+                let friendUsernames = friendJSON["friends"].arrayObject
+
+                return friendUsernames as? [String]
             }
             .filter { $0 != nil }
             .map { $0! }
