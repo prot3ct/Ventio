@@ -5,12 +5,17 @@ class LogoutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.onLogoutClicked()
+        //print("Loaded")
+        //self.onLogoutClicked()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("Loaded")
+        self.onLogoutClicked()    }
     
     func onLogoutClicked() {
         self.startLoading()
