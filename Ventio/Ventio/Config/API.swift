@@ -2,7 +2,7 @@ import Foundation
 
 public final class API
 {
-    [rivate ]static let ventioApiUrl = "https://ios-db.herokuapp.com"
+    private static let ventioApiUrl = "https://ios-db.herokuapp.com"
     
     internal static let signInUrl = "\(ventioApiUrl)/api/auth/login"
     internal static let registerUrl = "\(ventioApiUrl)/api/auth/register"
