@@ -19,7 +19,7 @@ public class Requester: RequesterProcol
                     .validate()
                     .responseJSON { response in
                         var responseResult = self.buildResponse(alamofireResponse: response)
-                        
+
                         switch response.result
                         {
                         case .success(let value):

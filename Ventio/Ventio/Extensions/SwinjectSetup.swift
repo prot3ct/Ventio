@@ -24,6 +24,7 @@ private func setupViewConrollers(_ defaultContainer: Container)
     defaultContainer.storyboardInitCompleted(EventsTableViewController.self)
     { (r, c) in
         c.userData = r.resolve(UserDataProtocol.self)
+        c.eventData = r.resolve(EventDataProtocol.self)
     }
     
     defaultContainer.storyboardInitCompleted(CreateEventViewController.self)
@@ -45,7 +46,7 @@ private func setupData(_ defaultContainer: Container)
 {
     defaultContainer.register(EventDataProtocol.self)
     { r in
-        EventData(requester: r.resolve(RequesterProcol.self)!)
+        EventData(requester: r.resolve(RequesterProcol.self)!, eventFactory: r.resolve(EventFactoryProtocol.self)!)
     }
     
     defaultContainer.register(UserDataProtocol.self)
@@ -57,4 +58,5 @@ private func setupData(_ defaultContainer: Container)
 private func setupFactories(_ defaultContainer: Container)
 {
     defaultContainer.register(ResponseFactoryProtocol.self) { _ in ResponseFactory() }
+    defaultContainer.register(EventFactoryProtocol.self) { _ in EventFactory() }
 }

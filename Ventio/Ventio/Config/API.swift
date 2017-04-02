@@ -7,4 +7,8 @@ public final class API
     internal static let signInUrl = "\(ventioApiUrl)/api/auth/login"
     internal static let registerUrl = "\(ventioApiUrl)/api/auth/register"
     internal static let createEventUrl = "\(ventioApiUrl)/api/events"
+    
+    static func eventsForCurrentUserUrl(username: String) -> String {
+        return "\(ventioApiUrl)/api/events/\(username)"
+    }
 }
