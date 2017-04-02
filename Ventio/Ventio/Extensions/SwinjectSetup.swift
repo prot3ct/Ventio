@@ -39,6 +39,10 @@ private func setupViewConrollers(_ defaultContainer: Container)
         (r, c) in
         c.userData = r.resolve(UserDataProtocol.self)
     }
+    defaultContainer.storyboardInitCompleted(FriendEventsTableViewController.self) {
+        (r, c) in
+        c.eventData = r.resolve(EventDataProtocol.self)
+    }
 }
 
 private func setupHelpers(_ defaultContainer: Container)
