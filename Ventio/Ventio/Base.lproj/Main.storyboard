@@ -12,7 +12,7 @@
         <!--My Friends-->
         <scene sceneID="Ha5-aL-B1d">
             <objects>
-                <viewController storyboardIdentifier="myFriendsViewController" id="v8E-ow-X5R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myFriendsViewController" id="v8E-ow-X5R" customClass="MyFriendsViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VlZ-fw-JKf"/>
                         <viewControllerLayoutGuide type="bottom" id="0rL-GS-Icd"/>
@@ -20,13 +20,42 @@
                     <view key="view" contentMode="scaleToFill" id="orn-53-9Qe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pnb-XH-GKV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendTableViewCell" rowHeight="64" id="c2f-s2-sTe">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c2f-s2-sTe" id="GDc-Wk-O7i">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sw-wn-zb3">
+                                                    <rect key="frame" x="8" y="8" width="173" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Friends" id="BWk-aJ-zDg"/>
+                    <connections>
+                        <outlet property="friendsTableView" destination="Pnb-XH-GKV" id="dDF-NZ-dHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlx-oD-9k1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143" y="-1544"/>
+            <point key="canvasLocation" x="-143.19999999999999" y="-1544.0779610194904"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="j9d-Mb-WtM">
@@ -184,7 +213,7 @@
         <!--My Events-->
         <scene sceneID="vUP-Ut-gYU">
             <objects>
-                <tableViewController title="My Events" id="qOp-0v-dI5" customClass="EventsTableViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="eventsTableViewController" title="My Events" id="qOp-0v-dI5" customClass="EventsTableViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="oEc-W1-Xct">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -53,9 +53,9 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                changeInitialViewController(identifier: "logoutViewController")
-            case UISwipeGestureRecognizerDirection.left:
                 changeInitialViewController(identifier: "myFrindsViewController")
+            case UISwipeGestureRecognizerDirection.left:
+                changeInitialViewController(identifier: "logoutViewController")
             default:
                 break
             }

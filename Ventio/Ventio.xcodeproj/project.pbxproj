@@ -15,6 +15,7 @@
 		8D13493F1E8EC7AE006DEC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D13493D1E8EC7AE006DEC19 /* LaunchScreen.storyboard */; };
 		8D4D88BF1E913C9F0018C52A /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D88BE1E913C9F0018C52A /* EventDetailsViewController.swift */; };
 		8D4D88C11E9151F60018C52A /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D88C01E9151F60018C52A /* LogoutViewController.swift */; };
+		8D4D88C31E915BFF0018C52A /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D88C21E915BFF0018C52A /* MyFriendsViewController.swift */; };
 		8DAC5C0F1E9079E500273BE5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC5C0E1E9079E500273BE5 /* Event.swift */; };
 		8DAC5C111E907A4C00273BE5 /* EventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC5C101E907A4C00273BE5 /* EventProtocol.swift */; };
 		8DAC5C131E907AAE00273BE5 /* EventFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC5C121E907AAE00273BE5 /* EventFactory.swift */; };
@@ -51,6 +52,7 @@
 		8D1349401E8EC7AE006DEC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4D88BE1E913C9F0018C52A /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		8D4D88C01E9151F60018C52A /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		8D4D88C21E915BFF0018C52A /* MyFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
 		8DAC5C0E1E9079E500273BE5 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8DAC5C101E907A4C00273BE5 /* EventProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventProtocol.swift; sourceTree = "<group>"; };
 		8DAC5C121E907AAE00273BE5 /* EventFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFactory.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				8DAC5C181E90823000273BE5 /* EventsTableViewController.swift */,
 				8D4D88BE1E913C9F0018C52A /* EventDetailsViewController.swift */,
 				8D4D88C01E9151F60018C52A /* LogoutViewController.swift */,
+				8D4D88C21E915BFF0018C52A /* MyFriendsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				8D4D88BF1E913C9F0018C52A /* EventDetailsViewController.swift in Sources */,
 				8DEFB44B1E8FE6EE00863CD7 /* StringCount.swift in Sources */,
 				8DEFB4451E8FE67300863CD7 /* UserDataProtocol.swift in Sources */,
+				8D4D88C31E915BFF0018C52A /* MyFriendsViewController.swift in Sources */,
 				8DEFB4491E8FE6DA00863CD7 /* SwinjectSetup.swift in Sources */,
 				8DAC5C191E90823000273BE5 /* EventsTableViewController.swift in Sources */,
 				8DEFB4411E8FE62300863CD7 /* RequesterProtocol.swift in Sources */,
