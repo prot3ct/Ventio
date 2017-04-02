@@ -5,7 +5,6 @@ import Cosmos
 
 class EventsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var eventsTableView: UITableView!
-    internal var userData: UserDataProtocol!
     internal var eventData: EventDataProtocol!
 
     private let disposeBag = DisposeBag()
@@ -53,13 +52,6 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
         return self.events.count
     }
     
-    @IBAction func onLogoutClicked(_ sender: UIButton) {
-        self.startLoading()
-        self.userData.signOut()
-        self.changeInitialViewController(identifier: "accountViewController")
-        self.showSuccess(withStatus: "You have signed out successfully")
-    }
-    
     private func changeInitialViewController(identifier: String)
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -67,7 +59,6 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
             .instantiateViewController(withIdentifier: identifier)
         UIApplication.shared.keyWindow?.rootViewController = initialViewController
     }
-    
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let eventCell = self.eventsTableView
