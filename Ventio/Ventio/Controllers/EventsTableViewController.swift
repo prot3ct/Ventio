@@ -19,7 +19,6 @@ class EventsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.eventsTableView.delegate = self
         self.eventsTableView.dataSource = self
         
@@ -29,8 +28,18 @@ class EventsTableViewController: UITableViewController {
             .getEventsForCurrentUser()
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { self.events.append($0) },
-                       onCompleted: { self.stopLoading() })
+            .subscribe(
+            onNext: {
+                print("HRESADG")
+                self.events.append($0)
+            },
+            onError: { error in
+                print(error)
+            },
+            onCompleted: {
+                print("Completed")
+                self.stopLoading()
+            })
             .disposed(by: disposeBag)
     }
     
@@ -43,7 +52,6 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(self.events.count)
         return self.events.count
     }
     

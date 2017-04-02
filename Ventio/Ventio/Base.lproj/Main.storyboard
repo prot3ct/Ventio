@@ -167,16 +167,16 @@
             </objects>
             <point key="canvasLocation" x="-1052" y="-1063"/>
         </scene>
-        <!--Item-->
+        <!--My Events-->
         <scene sceneID="vUP-Ut-gYU">
             <objects>
-                <tableViewController id="qOp-0v-dI5" customClass="EventsTableViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="My Events" id="qOp-0v-dI5" customClass="EventsTableViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oEc-W1-Xct">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iWj-ve-EtR" customClass="EventTableViewCell" customModule="Ventio" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" id="iWj-ve-EtR" customClass="EventTableViewCell" customModule="Ventio" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iWj-ve-EtR" id="rig-r8-nYE" customClass="EventTableViewCell" customModule="Ventio" customModuleProvider="target">
