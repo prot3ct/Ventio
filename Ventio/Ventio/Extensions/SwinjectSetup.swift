@@ -37,7 +37,7 @@ private func setupViewConrollers(_ defaultContainer: Container)
     }
     defaultContainer.storyboardInitCompleted(MyFriendsViewController.self) {
         (r, c) in
-        
+        c.userData = r.resolve(UserDataProtocol.self)
     }
 }
 
