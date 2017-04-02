@@ -116,15 +116,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-Ff-de7">
+                                <rect key="frame" x="16" y="20" width="74" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="qOp-0v-dI5" kind="show" id="s4N-2R-h7m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="w0o-O0-LaY">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="kBV-Eu-sLa">
-                            <connections>
-                                <segue destination="qOp-0v-dI5" kind="show" id="2jQ-AL-b1I"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="kBV-Eu-sLa"/>
                     </navigationItem>
                     <connections>
                         <outlet property="dateTextField" destination="WOq-jd-YCR" id="3jw-hh-8y6"/>
@@ -135,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYe-tT-jqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="-747"/>
+            <point key="canvasLocation" x="700" y="-747.07646176911555"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eaB-DZ-cxH">
@@ -379,6 +384,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2jQ-AL-b1I"/>
+        <segue reference="s4N-2R-h7m"/>
     </inferredMetricsTieBreakers>
 </document>
