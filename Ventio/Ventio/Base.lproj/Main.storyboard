@@ -209,7 +209,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="Qvi-bB-BDg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="Qvi-bB-BDg" customClass="FriendEventTableViewCell" customModule="Ventio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qvi-bB-BDg" id="sEI-gu-2zA">
@@ -239,6 +239,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="FriendEventTime" destination="aNa-eU-JBJ" id="XPr-mb-Twi"/>
+                                            <outlet property="friendEventDate" destination="HZR-nP-nwV" id="V6d-AO-tMY"/>
+                                            <outlet property="friendEventTitle" destination="0bU-X4-RRy" id="31y-PG-3Wb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -252,6 +257,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="friendEventsTableView" destination="3f2-TM-WJ1" id="XhU-s3-axs"/>
+                        <outlet property="friendEventsTitle" destination="udx-mI-UBF" id="Pnu-O5-W98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3T-NV-HvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

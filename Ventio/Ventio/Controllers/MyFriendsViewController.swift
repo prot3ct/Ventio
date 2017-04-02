@@ -8,6 +8,7 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
     internal var userData: UserDataProtocol!
     
     private let disposeBag = DisposeBag()
+    
     private var friends = [String]()
     {
         didSet
@@ -15,6 +16,7 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
             self.friendsTableView.reloadData()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.friendsTableView.delegate = self
@@ -50,6 +52,7 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     @IBAction func onAddFriendClicked(_ sender: UIButton) {
         self.startLoading()
         
@@ -123,7 +126,6 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
         self.friendsTableView.deselectRow(at: indexPath, animated: true)
         UIApplication.shared.keyWindow?.rootViewController = friendEventsTableViewController
      }
- 
 }
 
 class FriendTableViewCell: UITableViewCell
