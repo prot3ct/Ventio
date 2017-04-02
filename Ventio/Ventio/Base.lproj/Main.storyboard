@@ -48,11 +48,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnD-rt-CcS">
+                                <rect key="frame" x="215" y="20" width="144" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Add friend"/>
+                                <connections>
+                                    <action selector="onAddFriendClicked:" destination="v8E-ow-X5R" eventType="touchUpInside" id="S12-DT-M5U"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frO-n5-MuI">
+                                <rect key="frame" x="16" y="20" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Friends" id="BWk-aJ-zDg"/>
                     <connections>
+                        <outlet property="friendUsernameTextField" destination="frO-n5-MuI" id="BsK-XJ-DLe"/>
                         <outlet property="friendsTableView" destination="Pnb-XH-GKV" id="0Sa-rB-Mtw"/>
                     </connections>
                 </viewController>
@@ -282,7 +299,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jll-6R-zE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="-747"/>
+            <point key="canvasLocation" x="-95" y="-717"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="aAo-8y-Cv0">
@@ -446,6 +463,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Smv-U3-VQ8"/>
+        <segue reference="WPJ-by-KXq"/>
     </inferredMetricsTieBreakers>
 </document>

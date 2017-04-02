@@ -11,4 +11,8 @@ public final class API
     static func eventsForCurrentUserUrl(username: String) -> String {
         return "\(ventioApiUrl)/api/events/\(username)"
     }
+    
+    static func addFriendForCurrentUserUrl(username: String) -> String{
+        return "\(ventioApiUrl)/api/\(username)/friends"
+    }
 }

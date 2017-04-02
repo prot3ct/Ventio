@@ -3,6 +3,7 @@ import RxSwift
 
 class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var friendUsernameTextField: UITextField!
     @IBOutlet weak var friendsTableView: UITableView!
     internal var UserData: UserDataProtocol!
     
@@ -24,6 +25,22 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    @IBAction func onAddFriendClicked(_ sender: UIButton) {
+        self.startLoading()
+        
+        let friendUsername = self.friendUsernameTextField.text;
+        
+        self.UserData.addFriend(username: friendUsername!)
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { res in
+                self.showSuccess(withStatus: "Friend added successfully.")
+            }, onError: { error in
+                print(error);
+                self.showError(withStatus: "User not found or you have already added this user.")
+            })
+            .disposed(by: disposeBag)
     }
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {

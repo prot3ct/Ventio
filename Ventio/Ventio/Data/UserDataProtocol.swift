@@ -9,4 +9,6 @@ public protocol UserDataProtocol
     func signOut()
     
     func isLoggedIn() -> Bool
+    
+    func addFriend(username: String) -> Observable<ResponseProtocol>
 }

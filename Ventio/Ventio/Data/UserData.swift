@@ -34,7 +34,7 @@ public class UserData: UserDataProtocol
             "username": username.lowercased(),
             "passHash": password
         ]
-        print(userCredentials)
+
         return self.requester.post(API.registerUrl, parameters: userCredentials)
     }
     
@@ -50,4 +50,13 @@ public class UserData: UserDataProtocol
         return doesUserUsernameExist
     }
 
+    public func addFriend(username: String) -> Observable<ResponseProtocol> {
+        let currentUser: String = UserDefaults.standard.string(forKey: "username")!
+        
+        let friend =  [
+            "username": username.lowercased()
+        ]
+        
+        return self.requester.post(API.addFriendForCurrentUserUrl(username: currentUser), parameters: friend)
+    }
 }
