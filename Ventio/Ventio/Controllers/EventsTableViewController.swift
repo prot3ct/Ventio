@@ -4,7 +4,7 @@ import RxSwift
 import Cosmos
 
 class EventsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var eventsTableView: UITableView!
+    @IBOutlet weak var eventsTableView: UITableView!
     internal var eventData: EventDataProtocol!
 
     private let disposeBag = DisposeBag()
@@ -102,6 +102,9 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
         UIApplication.shared.keyWindow?.rootViewController = eventDetailsViewController
     }
     
+    func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
+        return "My Events:"
+    }
 }
 
 class EventTableViewCell: UITableViewCell

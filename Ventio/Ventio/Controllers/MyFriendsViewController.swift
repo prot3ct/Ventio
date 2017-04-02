@@ -112,8 +112,8 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
         return friendCell
     }
     
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-     {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
         let usernameAtIndexPath = self.friends[indexPath.row]
      
         let friendEventsTableViewController = UIStoryboard(name: "Main", bundle: nil)
@@ -124,7 +124,11 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
      
         self.friendsTableView.deselectRow(at: indexPath, animated: true)
         UIApplication.shared.keyWindow?.rootViewController = friendEventsTableViewController
-     }
+    }
+    
+    func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
+        return "My Friends:"
+    }
 }
 
 class FriendTableViewCell: UITableViewCell
