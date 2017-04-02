@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MyFriendsViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Ventio.xcodeproj">
    </FileRef>
    <FileRef

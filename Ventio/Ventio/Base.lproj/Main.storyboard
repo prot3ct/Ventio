@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendTableViewCell" rowHeight="64" id="c2f-s2-sTe">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendTableViewCell" rowHeight="64" id="c2f-s2-sTe" customClass="FriendTableViewCell" customModule="Ventio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c2f-s2-sTe" id="GDc-Wk-O7i">
@@ -42,6 +42,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendUsername" destination="1sw-wn-zb3" id="rae-i6-zAP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -50,7 +53,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="My Friends" id="BWk-aJ-zDg"/>
                     <connections>
-                        <outlet property="friendsTableView" destination="Pnb-XH-GKV" id="dDF-NZ-dHL"/>
+                        <outlet property="friendsTableView" destination="Pnb-XH-GKV" id="0Sa-rB-Mtw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlx-oD-9k1" userLabel="First Responder" sceneMemberID="firstResponder"/>

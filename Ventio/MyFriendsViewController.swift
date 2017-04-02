@@ -2,9 +2,9 @@ import UIKit
 import RxSwift
 
 class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet weak var friendsTableView: UITableView!
-    internal var UserData: UserDataProtocol!
+    
+    
+    internal var UserData: EventDataProtocol!
     
     private let disposeBag = DisposeBag()
     private var friends = [String]()
@@ -54,14 +54,15 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let friendCell = self.friendsTableView
+        let eventCell = self.friendsTableView
             .dequeueReusableCell(withIdentifier: "FriendTableViewCell", for: indexPath)
-            as! FriendTableViewCell
-        
-         let currentFriend = self.friends[indexPath.row]
-         friendCell.friendUsername.text = currentFriend
-        
-        return friendCell
+            as! EventTableViewCell
+        /*
+         let currentEvent = self.events[indexPath.row]
+         eventCell.eventTitle.text = currentEvent.title
+         
+         */
+        return eventCell
     }
     /*
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
@@ -83,7 +84,6 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
 
 class FriendTableViewCell: UITableViewCell
 {
-    @IBOutlet weak var friendUsername: UILabel!
     
     override func awakeFromNib()
     {
