@@ -17,6 +17,26 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.friendsTableView.delegate = self
+        self.friendsTableView.dataSource = self
+        
+        self.startLoading()
+        
+        self.userData
+            .getFriendsForCurrentUser()
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
+            .observeOn(MainScheduler.instance)
+            .subscribe(
+                onNext: {
+                    self.friends.append($0)
+            },
+                onError: { error in
+                    print(error)
+            },
+                onCompleted: {
+                    self.stopLoading()
+            })
+            .disposed(by: disposeBag)
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left

@@ -22,47 +22,6 @@ class EventDetailsViewController: UIViewController
         self.eventCreator.text = currentEvent.creator
     }
     @IBAction func onDeleteClicked(_ sender: Any) {
+        
     }
-    
-    /*
-    @IBAction func onCallButtonClick(_ sender: Any)
-    {
-        guard self.currentPlaceDetails?.phoneNumber != nil else
-        {
-            self.showError(withStatus: "Phone number not provided")
-            return
-        }
-        
-        let phoneNumber = (self.currentPlaceDetails?.phoneNumber)!
-        
-        if let dialUrl = URL(string: "telprompt://\(phoneNumber)")
-        {
-            UIApplication.shared.open(dialUrl, options: [:], completionHandler: nil)
-        }
-        else
-        {
-            self.showError(withStatus: "Phone number not provided")
-        }
-    }
- 
-    @IBAction func onBrowseButtonClick(_ sender: Any)
-    {
-        guard self.currentPlaceDetails?.websiteUrl != nil else
-        {
-            self.showError(withStatus: "Website not provided")
-            return
-        }
-        
-        let websiteUrl = (self.currentPlaceDetails?.websiteUrl)!
-        
-        if let websiteUrl = URL(string: websiteUrl)
-        {
-            UIApplication.shared.open(websiteUrl, options: [:], completionHandler: nil)
-        }
-        else
-        {
-            self.showError(withStatus: "Website not provided")
-        }
-    }
-    */
 }

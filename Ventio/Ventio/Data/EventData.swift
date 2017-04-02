@@ -38,12 +38,12 @@ public class EventData: EventDataProtocol
             .flatMap {
                 Observable.from(JSON($0.body!)["result"].arrayValue)
             }
-            .map { placeJSON in
-                let title = placeJSON["title"].stringValue
-                let description = placeJSON["description"].string
-                let time = placeJSON["time"].string
-                let date = placeJSON["date"].string
-                let creator = placeJSON["creator"].string
+            .map { eventJSON in
+                let title = eventJSON["title"].stringValue
+                let description = eventJSON["description"].string
+                let time = eventJSON["time"].string
+                let date = eventJSON["date"].string
+                let creator = eventJSON["creator"].string
                 
                 return self.eventFactory.createEvent(title: title, description: description, time: time, date: date, creator: creator)
             }

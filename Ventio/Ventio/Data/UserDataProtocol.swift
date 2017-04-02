@@ -11,4 +11,6 @@ public protocol UserDataProtocol
     func isLoggedIn() -> Bool
     
     func addFriend(username: String) -> Observable<ResponseProtocol>
+    
+    func getFriendsForCurrentUser() -> Observable<String>
 }
