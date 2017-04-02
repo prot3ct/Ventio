@@ -5,7 +5,7 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
 
     @IBOutlet weak var friendUsernameTextField: UITextField!
     @IBOutlet weak var friendsTableView: UITableView!
-    internal var UserData: UserDataProtocol!
+    internal var userData: UserDataProtocol!
     
     private let disposeBag = DisposeBag()
     private var friends = [String]()
@@ -31,7 +31,7 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let friendUsername = self.friendUsernameTextField.text;
         
-        self.UserData.addFriend(username: friendUsername!)
+        self.userData.addFriend(username: friendUsername!)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { res in
