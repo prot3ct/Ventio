@@ -164,7 +164,7 @@
         <!--Logout-->
         <scene sceneID="1bu-nb-Iwr">
             <objects>
-                <viewController id="HML-nX-LMs" sceneMemberID="viewController">
+                <viewController id="HML-nX-LMs" customClass="LogoutViewController" customModule="Ventio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="90V-EF-Ju7"/>
                         <viewControllerLayoutGuide type="bottom" id="oga-j1-1o9"/>
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qj-dn-ewO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1052" y="-233"/>
+            <point key="canvasLocation" x="-1052" y="-233.43328335832086"/>
         </scene>
         <!--My Events-->
         <scene sceneID="vUP-Ut-gYU">
