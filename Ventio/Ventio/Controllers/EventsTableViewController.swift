@@ -3,7 +3,7 @@ import UIKit
 import RxSwift
 import Cosmos
 
-class EventsTableViewController: UITableViewController {
+class EventsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var eventsTableView: UITableView!
     internal var userData: UserDataProtocol!
     internal var eventData: EventDataProtocol!
@@ -30,14 +30,12 @@ class EventsTableViewController: UITableViewController {
             .observeOn(MainScheduler.instance)
             .subscribe(
             onNext: {
-                print("HRESADG")
                 self.events.append($0)
             },
             onError: { error in
                 print(error)
             },
             onCompleted: {
-                print("Completed")
                 self.stopLoading()
             })
             .disposed(by: disposeBag)
@@ -47,11 +45,11 @@ class EventsTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.events.count
     }
     
@@ -71,7 +69,7 @@ class EventsTableViewController: UITableViewController {
     }
     
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let eventCell = self.eventsTableView
             .dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath)
             as! EventTableViewCell
@@ -84,7 +82,7 @@ class EventsTableViewController: UITableViewController {
         return eventCell
      }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let eventAtIndexPath = self.events[indexPath.row]
         
