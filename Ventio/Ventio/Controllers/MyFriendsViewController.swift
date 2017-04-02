@@ -71,9 +71,9 @@ class MyFriendsViewController: UIViewController, UITableViewDelegate, UITableVie
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                changeInitialViewController(identifier: "logoutViewController")
-            case UISwipeGestureRecognizerDirection.left:
                 changeInitialViewController(identifier: "myFriendsViewController")
+            case UISwipeGestureRecognizerDirection.left:
+                changeInitialViewController(identifier: "logoutViewController")
             default:
                 break
             }
