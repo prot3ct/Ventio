@@ -1,5 +1,5 @@
 ###Deliverables
-* Record a short video uploaded on YouTube your application - <a href="https://youtu.be/LhRoncUMfLk">Ventio video</a>
+* Record a short video uploaded on YouTube your application - <a href="https://www.youtube.com/watch?v=yUmdjVHimQQ">Ventio video</a>
   * Registered application at Telerik Academy Showcase System - <a href="#">Showcase System - Ventio</a>
   * Link for the GitHub repository of our App - <a href="https://github.com/prot3ct/Ventio">Ventio GitHub repository</a>
 
